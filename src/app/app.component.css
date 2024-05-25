@@ -7,16 +7,16 @@ main {
 	gap: 2rem;
 }
 
-/* #users {
+#users {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 0.5rem;
   overflow: auto;
-} */
+}
 
-/* #fallback {
+#fallback {
   font-weight: bold;
   font-size: 1.15rem;
   margin: 0;
@@ -31,10 +31,10 @@ main {
 
   #users {
     flex-direction: column;
-  }
+  } 
 
   #fallback {
     font-size: 1.5rem;
     text-align: left;
-  }
-}  */
+  } 
+}

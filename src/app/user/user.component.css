@@ -3,7 +3,7 @@ button {
 	display: flex;
 	align-items: center;
 	background-color: rgba(78,48,107,255);
-	color: rgba(60,35,93,255);
+	color: rgba(195, 179, 216, 255);
   cursor: pointer;
 	gap: 0.5rem;
 	border: none;
