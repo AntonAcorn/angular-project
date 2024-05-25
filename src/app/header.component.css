@@ -1,32 +1,36 @@
 .header {
-	position: relative;
-	padding-top: 1rem;
+	text-align: center;
 }
 
-.title_combined{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	margin-top: -0.9rem;
+.title_combined {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.9rem;
 }
 
 .title {
-	color: rgba(195,179,216,255);
-	font-size: 0.7rem;
-	margin-top: 0.5rem;
-	font-weight: bold;
+  color: rgba(195, 179, 216, 255);
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
 }
 
 .title_bottom {
-	color: rgba(195,179,216,255);
-	margin-top: -1.7rem;
-	font-size: 0.7rem;
+  color: rgba(195, 179, 216, 255);
+  margin-top: -1.7rem;
+  font-size: 0.7rem;
 }
 
 img {
-	width: 4.5rem;
-	position: relative;
-	padding-left: 56.6rem;
-	padding-top: 0.5rem;
+  width: 4.5rem;
+  padding-top: 0.5rem;
+}
+
+
+.background {
+	display: inline-block;
+  background: linear-gradient(rgba(66,4,127,255), rgba(80,52,107,255));
+  padding: 1rem 16.5rem;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
 }
