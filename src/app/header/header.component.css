@@ -31,6 +31,6 @@ img {
 	display: inline-block;
   background: linear-gradient(rgba(66,4,127,255), rgba(80,52,107,255));
   padding: 1rem 16.5rem;
-	border-bottom-right-radius: 1rem;
-	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 4rem;
+	border-bottom-left-radius: 4rem;
 }

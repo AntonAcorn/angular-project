@@ -1,3 +1,35 @@
-h1, p {
-	color: aliceblue;
+button {
+	border-radius: 4rem;
+	display: flex;
+	align-items: center;
+	background-color: rgba(78,48,107,255);
+	color: rgba(60,35,93,255);
+  cursor: pointer;
+	gap: 0.5rem;
+	border: none;
+	width: 100%;
+	padding: 0.35rem 0.5rem;
+	font: inherit;
+	min-width: 10rem;
+	text-align: left;
+}
+
+button:hover,
+button:active {
+	background-color: #9965dd;
+  color: #150722;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+img {
+	width: 2rem;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
