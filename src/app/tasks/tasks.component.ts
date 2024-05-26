@@ -1,4 +1,4 @@
-import { Component, Input, input, computed, Output, EventEmitter, output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tasks',
@@ -7,4 +7,5 @@ import { Component, Input, input, computed, Output, EventEmitter, output } from 
   styleUrl: './tasks.component.css',
 })
 export class TasksComponent {
+	@Input({required: true}) name!: string;
 }

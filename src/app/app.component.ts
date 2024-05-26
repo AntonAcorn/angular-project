@@ -15,6 +15,10 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
 	users = DUMMY_USERS;
 
+	obtainUser(id: string) {
+		return this.users.find(user => user.id === id);
+	}
+
 	onSelectUser(id: string) {
 		console.log('Selected user id is: ' + id);
 	}
