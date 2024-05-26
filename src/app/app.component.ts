@@ -14,12 +14,14 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
 	users = DUMMY_USERS;
+	selectedUserId = "testUser";
 
-	obtainUser(id: string) {
-		return this.users.find(user => user.id === id);
+	obtainUser() {
+		return this.users.find((user) => user.id === this.selectedUserId)!;
 	}
 
 	onSelectUser(id: string) {
+		this.selectedUserId = id;
 		console.log('Selected user id is: ' + id);
 	}
 }
