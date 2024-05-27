@@ -1,9 +1,23 @@
-import { Component, Input, input, computed, Output, EventEmitter, output } from '@angular/core';
+import {
+  Component,
+  Input,
+  input,
+  computed,
+  Output,
+  EventEmitter,
+  output,
+} from '@angular/core';
 
-type User = {
-	id: string,
-	avatar: string,
-	name: string
+// type User = {
+// 	id: string,
+// 	avatar: string,
+// 	name: string
+// }
+
+interface User {
+  id: string;
+  avatar: string;
+  name: string;
 }
 
 @Component({
@@ -13,29 +27,29 @@ type User = {
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-//	@Input({required: true}) id!: string;
-// @Input({required: true}) avatar!: string;
-//@Input({required: true}) name!: string;
-// The input works as a signal, so in HTML this field needs to be called as a function with ().
-// name = input.required<string>();
-// avatar = input.required<string>();
+  //	@Input({required: true}) id!: string;
+  // @Input({required: true}) avatar!: string;
+  //@Input({required: true}) name!: string;
+  // The input works as a signal, so in HTML this field needs to be called as a function with ().
+  // name = input.required<string>();
+  // avatar = input.required<string>();
 
-@Input({required: true}) user!: User
+  @Input({ required: true }) user!: User;
 
-@Output() select = new EventEmitter<string>();
-//select = output<string>();
+  @Output() select = new EventEmitter<string>();
+  //select = output<string>();
 
-// Лучше использовать computed, потому что Angular будет пересчитывать только при изменении данных в avatar
-imagePath = computed(() => {
-	return 'assets/users/' + this.user.avatar;
-})
+  // Лучше использовать computed, потому что Angular будет пересчитывать только при изменении данных в avatar
+  imagePath = computed(() => {
+    return 'assets/users/' + this.user.avatar;
+  });
 
-// Геттер вызывается как свойство, а не как функция
-// get imagePath() {
-// 	return 'assets/users/' + this.avatar();
-// }
+  // Геттер вызывается как свойство, а не как функция
+  // get imagePath() {
+  // 	return 'assets/users/' + this.avatar();
+  // }
 
   onSelectUser() {
-   this.select.emit(this.user.id);
+    this.select.emit(this.user.id);
   }
 }
