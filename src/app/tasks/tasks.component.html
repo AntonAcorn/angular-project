@@ -1,10 +1,14 @@
+@if (isAddedTask) {
+	<app-new-task />
+}
+
 <div class="container">
   <section>
     <header>
       <h1>{{ name }}' Tasks</h1>
 		</header>
       <menu>
-        <button>Add Task</button>
+        <button (click)="onClickAddButton()">Add Task</button>
       </menu>
     <ul>
       @for (task of selectedUserTask(); track task.id) {
