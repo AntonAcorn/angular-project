@@ -25,6 +25,7 @@ export class UserComponent {
   // avatar = input.required<string>();
 
   @Input({ required: true }) user!: User;
+	@Input({ required: true }) isSelected!: boolean;
 
   @Output() select = new EventEmitter<string>();
   //select = output<string>();
