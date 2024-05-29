@@ -1,5 +1,5 @@
 @if (isAddedTask) {
-	<app-new-task />
+	<app-new-task (cancel)="onCancelAddTask()" />
 }
 
 <div class="container">

@@ -30,4 +30,8 @@ export class TasksComponent {
 	onClickAddButton() {
 		this.isAddedTask = true;
 	}
+
+	onCancelAddTask() {
+		this.isAddedTask = false;
+	}
 }
