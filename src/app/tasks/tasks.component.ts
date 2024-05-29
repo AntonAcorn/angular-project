@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { NewTaskComponent } from './new-task/new-task';
+import { NewTaskComponent } from './new-task/new-task.component';
 import { TaskComponent } from './task/task.component';
 import { type NewTaskData } from './task/task.model';
 import { TasksService } from './tasks.service';
@@ -23,18 +23,11 @@ export class TasksComponent {
 		return this.tasksService.getUserTasks(this.userId);
 	}
 
-	onCompleteTask(id: string) {
-	}
-
 	onClickAddButton() {
 		this.isAddedTask = true;
 	}
 
-	onCancelAddTask() {
+	onCloseAddTask() {
 		this.isAddedTask = false;
-	}
-
-	onAddNewToTask(taskData: NewTaskData) {
-		this.isAddedTask = false; 
 	}
 }
