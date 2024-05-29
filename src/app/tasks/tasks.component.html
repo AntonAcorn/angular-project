@@ -11,7 +11,7 @@
         <button (click)="onClickAddButton()">Add Task</button>
       </menu>
     <ul>
-      @for (task of selectedUserTask(); track task.id) {
+      @for (task of selectedUserTask; track task.id) {
 				<li>
 					<app-task [task]="task" (completeEv)="onCompleteTask($event)"/>
 				</li>
